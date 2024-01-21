@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posse de Bola</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.ico" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Genos&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <p class="navbar-value"><span id="labelM"></span></p>
+    </nav>
+
+    <div class="row">
+        <div class="col">
+            <div class="card primary">
+                <div class="card-header">
+                    <p>Paysandu Sport Club</p>
+                </div>
+                <div class="card-circle primary">
+                    <p class="card-circle-value" id="labelA">...</p>
+                    <span class="card-circle-sm-value">Paysandu Sport Club</span>
+                </div>
+                <div class="card-footer primary">
+                    <button class="btn primary no-hover" type="button" disabled title="percent">
+                        0%
+                    </button>
+                    <!-- <button class="btn" type="button" title="reset" onclick="reset('playerA')">
+                        <i class="fa-solid fa-stop"></i>
+                    </button> -->
+                    <button class="btn primary" type="button" title="play/pause" onclick="playPause('playerA')"
+                        id="btnA">
+                        <i class="fa-regular fa-circle-pause"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card secondary">
+                <div class="card-header">
+                    <p>Águia de Marabá Futebol Clube</p>
+                </div>
+                <div class="card-circle secondary">
+                    <p class="card-circle-value" id="labelB">...</p>
+                    <span class="card-circle-sm-value">Águia de Marabá Futebol Clube</span>
+                </div>
+                <div class="card-footer secondary">
+                    <button class="btn secondary" type="button" title="play/pause" onclick="playPause('playerB')"
+                        id="btnB">
+                        <i class="fa-regular fa-circle-pause"></i>
+                    </button>
+                    <!--  <button class="btn" type="button" title="reset" onclick="reset('playerB')">
+                        <i class="fa-solid fa-stop"></i>
+                    </button> -->
+                    <button class="btn secondary no-hover" type="button" disabled title="percent">
+                        0%
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<script src="js/utils.js" type="text/javascript"></script>
+<script src="js/index.js" type="text/javascript"></script>
+
+</html>
